@@ -163,4 +163,10 @@ header {
 	-moz-box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
 }
 
+img {
+	width: 200px;
+	height: 100px;
+	object-fit: contain;
+}
+
 /********** css end **********/

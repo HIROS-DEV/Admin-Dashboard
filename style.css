@@ -126,12 +126,15 @@ table {
 }
 
 /********** reset css end **********/
+
+/********** css start **********/
 :root,
 :root::before,
 :root::after {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -159,3 +162,5 @@ header {
 	-webkit-box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
 	-moz-box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
 }
+
+/********** css end **********/

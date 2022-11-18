@@ -127,8 +127,7 @@ table {
 
 /********** reset css end **********/
 
-/********** css start **********/
-
+/********** project start **********/
 /********** overall css start **********/
 :root,
 :root::before,
@@ -207,7 +206,7 @@ main {
 	grid-template-rows: 200px 1fr;
 }
 
-/********** main header section css start **********/
+/********** header section css start **********/
 header {
 	background-color: #ffffff;
 	box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
@@ -287,8 +286,106 @@ button {
 	-webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.14) inset;
 	-moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.14) inset;
 }
-/********** main header section css end **********/
+/********** header section css end **********/
+
+/********** cards section css start **********/
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 20px;
+}
+
+.cards > * {
+	border: 1px solid crimson;
+}
+
+.projects {
+	grid-column: span 2;
+	grid-row: span 2;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 30px;
+	padding: 20px;
+	align-items: center;
+}
+
+.projects > h2 {
+	font-weight: 500;
+	font-size: 1.2rem;
+	grid-column: 1 / -1;
+}
+
+.project {
+	height: 200px;
+	border-radius: 10px;
+	border-left: 10px solid #f0b42a;
+	background-color: #ffffff;
+	box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
+	-webkit-box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
+	-moz-box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
+	display: grid;
+	align-items: center;
+	padding: 20px;
+}
+
+.project > h2 {
+	font-weight: 600;
+}
+
+.project > p {
+	color: #747474;
+}
+
+.icons {
+	text-align: end;
+}
+
+.icons > img {
+	width: 20px;
+	padding: 0 10px;
+}
+
+.announcements {
+	padding: 20px;
+	display: grid;
+	grid-template-rows: 50px 1fr;
+}
+
+.announcements > h2 {
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.announcement {
+	height: 90%;
+	background-color: #ffffff;
+	box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
+	-webkit-box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
+	-moz-box-shadow: -4px 6px 10px -4px rgba(163, 160, 160, 1);
+	padding: 20px;
+	border-radius: 10px;
+	display: grid;
+	gap: 10px;
+}
+
+.announcement-card {
+	border-bottom: 1px solid silver;
+	padding: 10px 0;
+}
+
+.announcement-card h5 {
+	font-weight: 600;
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+}
+
+.announcement-card p {
+	color: #747474;
+	font-size: 0.8rem;
+}
+
+/********** cards section css end **********/
 
 /********** main section css end **********/
-
-/********** css end **********/
+/********** project end **********/
